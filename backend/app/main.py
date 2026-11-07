@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
-from app.api import auth, learning, assets, portfolio
+from app.api import auth, learning, assets, portfolio, dashboard, user
 
 app = FastAPI(
     title="FinSphere API",
@@ -23,6 +23,8 @@ app.include_router(auth.router)
 app.include_router(learning.router)
 app.include_router(assets.router)
 app.include_router(portfolio.router)
+app.include_router(dashboard.router)
+app.include_router(user.router)
 
 @app.get("/")
 def root():
