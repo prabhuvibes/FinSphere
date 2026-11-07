@@ -1,0 +1,28 @@
+# FinSphere Backend Dependencies - Windows Optimized
+# Install with: pip install -r requirements_windows.txt
+
+# Core FastAPI
+fastapi==0.115.0
+uvicorn[standard]==0.32.1
+
+# Database
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Request handling
+python-multipart==0.0.20
+
+# Data validation
+pydantic==2.10.3
+pydantic-settings==2.7.0
+
+# Environment variables
+python-dotenv==1.0.1
+
+# Additional dependencies that might be needed
+cryptography>=41.0.0
+bcrypt>=4.0.0
